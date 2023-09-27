@@ -4,7 +4,12 @@
     {
         public double CalculateCost(List<ITile> tiles, double pricePerMeter)
         {
-            throw new NotImplementedException();
+           double result = 0;
+           foreach (var tile in tiles)
+           {
+               result += tile.CalculateArea() * tile.GetMaterialPrize() * pricePerMeter;
+           }                  
+           return result;
         }
     }
 }

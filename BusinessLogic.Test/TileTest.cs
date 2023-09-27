@@ -41,6 +41,7 @@ public class TileTest
         Assert.AreEqual(expected, actual);
     }
 
+
     [TestMethod]
     public void CalculateCostTilesTest()
     {

@@ -8,5 +8,10 @@
         {
             return SideLength * SideLength;
         }
+
+        public double GetMaterialPrize()
+        {
+            return Material.Cost;
+        }
     }
 }

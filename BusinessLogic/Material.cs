@@ -3,6 +3,6 @@
     public class Material
     {
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
     }
 }

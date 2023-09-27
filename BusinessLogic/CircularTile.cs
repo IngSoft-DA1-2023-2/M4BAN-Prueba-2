@@ -9,5 +9,10 @@
         {
             return Math.PI * Radius * Radius;
         }
+
+        public double GetMaterialPrize()
+        {
+            return Material.Cost;
+        }
     }
 }
