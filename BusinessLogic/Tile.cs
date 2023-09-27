@@ -8,7 +8,6 @@
         {
         }
 
-        public int Area { get; set; }
         public string Material
         {
             get => material;
@@ -24,6 +23,13 @@
                 }
 
             }
+        }
+
+        public int Side { get; set; }
+
+        public virtual int GetArea()
+        {
+            return 0;
         }
     }
 }

@@ -11,14 +11,6 @@ public class TileTests
     }
 
     [TestMethod]
-    public void TileAreaTest()
-    {
-        var tile = new Tile();
-        tile.Area = 1;
-        Assert.AreEqual(1, tile.Area);
-    }
-
-    [TestMethod]
     public void TileMaterialTest()
     {
         var tile = new Tile();
@@ -31,6 +23,14 @@ public class TileTests
     {
         var tile = new Tile();
         Assert.ThrowsException<ArgumentException>(() => tile.Material = "Madera");
+    }
+
+    [TestMethod]
+    public void TileSideTest()
+    {
+        var tile = new Tile();
+        tile.Side = 1;
+        Assert.AreEqual(1, tile.Side);
     }
 
 }
