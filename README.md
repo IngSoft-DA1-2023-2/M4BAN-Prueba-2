@@ -13,12 +13,11 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 
 ## Contestar en el README
 
-5. ¿Qué archivo se modificó para lograr el ejercicio 2?
-	
-
+5. ¿Qué archivo se modificó para lograr el ejercicio 2?											
+	Los archivos modificados fueron bussiness.cs y bussinessTest.cs por la utilizacion de los tests y la creacion de las clases.
 
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
-	
+	Teoricamente si lo hubiera hecho, hubiera creado para cada forma una clase que hereda otra clase material el cual pueda recibir la base, la altura y el material para que asi calcule el area y el precio de la baldosa. Luego en la clase CostCalculator, hubiera creado un metodo que reciba una lista de baldosas y el precio por metro cuadrado, y devuelve el costo total. En el metodo hubiera creado una variable que guarde el costo total y luego hubiera creado un foreach que recorra la lista de baldosas y que por cada baldosa que encuentre, sume el costo total de la baldosa a la variable que guarda el costo total. Luego hubiera retornado el costo total.
 	
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
 	Cuando genero el código, dotnet genera archivos .DLL que contienen el código compilado de la aplicación, esta escrito en codigo legible por el humano independiente a como este escrito. Estos archivos son usados por el CLR para ejecutar la aplicación.
