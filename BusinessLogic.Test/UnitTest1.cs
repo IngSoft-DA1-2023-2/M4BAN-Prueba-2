@@ -72,5 +72,20 @@ public class BaldosaTest
         
         Assert.AreEqual(material, unused.Material);
     }
-   
+    
+    
+    [TestMethod]
+    public void precio_shouldSucceed()
+    {
+    string tipo = "circular";
+    string material = "ladrillo";
+        
+    Baldosa unused = new Baldosa
+    {
+        Tipo = tipo,
+        Material = material,
+    };
+        
+    Assert.AreEqual(10, unused.PrecioMetro2);
+}
 }
