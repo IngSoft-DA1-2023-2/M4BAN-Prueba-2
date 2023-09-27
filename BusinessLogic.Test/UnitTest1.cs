@@ -1,12 +1,16 @@
+
+
 namespace BusinessLogic.Test;
 
 [TestClass]
 public class UnitTest1
 {
+    public string Material { get; private set; }
+
     [TestMethod]
     public void NewTileTest()
     {
-        var tile = new Tile();
+        var tile = new TileData();
         Assert.IsNotNull(tile);
     }
 
@@ -14,15 +18,28 @@ public class UnitTest1
 
     public void MaterialTileTest()
     {
-        var tile = new Tile();
+        var tile = new TileData();
         tile.Material = "Cemento";
         Assert.AreEqual("Cemento",tile.Material);
     }
     [TestMethod]
     public void AreaTileTest()
     {
-        var tile = new Tile();
+        var tile = new TileData();
         tile.Area = 0.5;
         Assert.AreEqual(0.5,tile.Area);
     }
+
+    [TestMethod]
+    public void WrongMaterialTileTest()
+    {
+        var tileData = new TileData();
+        {
+            Material = "Madera";
+
+     };
+        var exception = Assert.ThrowsException<ArgumentException>(() => new Tile(tileData));
+        Assert.AreEqual("Status must be Active or Inactive", exception.Message);
+    }
+    
 }
