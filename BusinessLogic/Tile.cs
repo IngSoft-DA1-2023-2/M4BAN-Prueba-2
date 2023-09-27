@@ -8,4 +8,5 @@ public class Tile
     }
 
     public string Material { get; set; }
+    public double Area { get; set; }
 }
