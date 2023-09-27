@@ -14,5 +14,13 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 ## Contestar en el README
 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
+BussinessLogic.Test.csproj
+Se le agrego las lineas: el ItemGroup y el ProjectReference.
+
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
+Debera de agregar una nueva clase que herede de la clase baldosa
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+
+//Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+el .DDL tiene codigo ejecutable y metadatos
+el CLR carga el esanmblado, hace la verificación, compilacion just in time y ejecuta
