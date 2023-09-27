@@ -12,8 +12,8 @@ public class Baldosa
         Material = material;
     }
     private string tipo = string.Empty;
-
-    public string Material { get; set; }
+    private string material = string.Empty;
+    
     
     public string Tipo
     {
@@ -26,6 +26,19 @@ public class Baldosa
             }
 
             tipo = value;
+        }
+    }
+    
+    public string Material
+    {
+        get => material;
+        set
+        {
+            if (value != "ladrillo" && value != "cemento")
+            {
+                throw new ArgumentException("El material de baldosa no es correcto");
+            }
+            
         }
     }
 }
