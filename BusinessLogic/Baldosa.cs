@@ -38,7 +38,7 @@ public class Baldosa
             {
                 throw new ArgumentException("El material de baldosa no es correcto");
             }
-            
+            material = value;
         }
     }
 }
