@@ -39,7 +39,7 @@ public class UnitTest1
 
      };
         var exception = Assert.ThrowsException<ArgumentException>(() => new Tile(tileData));
-        Assert.AreEqual("Status must be Active or Inactive", exception.Message);
+        Assert.AreEqual("Material no valido", exception.Message);
     }
     
 }
