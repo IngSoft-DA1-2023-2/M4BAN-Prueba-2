@@ -8,12 +8,12 @@ public class TileTest
     {
         var tile = new Tile()
         {
-            shape = Shape.Square,
-            material = Material.Cement,
+            Shape = Shape.Square,
+            Material = Material.Cement,
             Area = 1,
         };
-        Assert.AreEqual(Shape.Square, tile.shape);
-        Assert.AreEqual(Material.Cement, tile.material);
+        Assert.AreEqual(Shape.Square, tile.Shape);
+        Assert.AreEqual(Material.Cement, tile.Material);
         Assert.AreEqual(1, tile.Area);
     }
     

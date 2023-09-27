@@ -10,13 +10,13 @@ public class Tile
     
     public Tile (Shape shape, Material material, double area)
     {
-        this.shape = shape;
-        this.material = material;
+        this.Shape = shape;
+        this.Material = material;
         this.Area = area;
     }
 
-    public Shape shape { get; set; }
-    public Material material { get; set; }
+    public Shape Shape { get; set; }
+    public Material Material { get; set; }
     public double Area 
     { 
         get => _area;
@@ -33,8 +33,8 @@ public class Tile
 
 public enum Material
 {
-    Cement,
-    Brick
+    Cement = 5,
+    Brick = 10
 }
 
 public enum Shape
