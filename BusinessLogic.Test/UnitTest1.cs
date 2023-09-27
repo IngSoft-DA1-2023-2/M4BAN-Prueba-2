@@ -22,4 +22,14 @@ public class BaldosaTest
         Assert.AreEqual(tipo, baldosa.Tipo);
     }
     
+    [TestMethod]
+    public void Baldosa_controlDeTipos_ShouldFail()
+    {
+        string tipo = "triangulo";
+        string material = "ladrillo";
+        Baldosa baldosa = new Baldosa(tipo, material);
+        
+        Assert.AreEqual(material, baldosa.Material);
+    }
+    
 }
