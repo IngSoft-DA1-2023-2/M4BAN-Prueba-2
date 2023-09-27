@@ -13,6 +13,7 @@ public class TileTest
         Assert.AreEqual(expectedCost, actualCost);
     }
 
+
     [TestMethod]
     public void CalculateCost_CircularCementalTile_ShouldSucced()
     {
