@@ -18,7 +18,7 @@ public class ValdosaTest
         int tamano = 10; //radio o lado
         
         // Act
-        var valdosa = new Valdosa(tipo, material, tamano);
+        Valdosa valdosa = new Valdosa(tipo, material, tamano);
         
         // Assert
         Assert.AreEqual(valdosa.Tipo, tipo);

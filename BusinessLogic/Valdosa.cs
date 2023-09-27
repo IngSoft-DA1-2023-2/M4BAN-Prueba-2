@@ -47,4 +47,11 @@ public class Valdosa
             _tamano = value;
         }
     }
+    
+    public Valdosa(int tipo, int material, int tamano)
+    {
+        Tipo = tipo;
+        Material = material;
+        Tamano = tamano;
+    }
 }
