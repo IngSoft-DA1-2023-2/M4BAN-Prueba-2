@@ -16,3 +16,8 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+
+## Entrega
+5. Se modifico el BusinessLogicTest.csproj
+6. Si se desea agregar una nueva figura, se debe modificar en la clase enum Shape, agregando el nuevo tipo de figura.
+7. Los archivos .DLL contienen el codigo compilado de la aplicacion, y son usados por el CLR para ejecutar la aplicacion.

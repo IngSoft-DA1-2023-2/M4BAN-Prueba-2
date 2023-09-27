@@ -2,43 +2,35 @@ namespace BusinessLogic;
 
 public class Tile
 {
-    private double _area;
+    private int _size;
 
     public Tile()
     {
     }
     
-    public Tile (Shape shape, Material material, double area)
+    public Tile (Shape shape, Material material, int size)
     {
-        this.Shape = shape;
-        this.Material = material;
-        if (shape == Shape.Square)
-        {
-            this.Area = Size * Size;
-        }
-        else if (shape == Shape.Square)
-        {
-            this.Area = Double.Pi * Size * Size;
-        }
-        
+        Shape = shape;
+        Material = material;
+        Size = size;
     }
 
+    public double Area { get; set; }
     public Shape Shape { get; set; }
     public Material Material { get; set; }
-    public double Area 
-    { 
-        get => _area;
+
+    public int Size
+    {
+        get => _size;
         set
         {
-            if (value < 0 || value == 0)
+            if (value <= 0)
             {
-                throw new ArgumentException("Area cannot be negative");
+                throw new ArgumentException("Size cannot be 0 or negative");
             }
-            _area = value;
+            _size = value;
         }
     }
-
-    public int Size { get; set; }
 }
 
 public enum Material

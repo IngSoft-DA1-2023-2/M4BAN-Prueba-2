@@ -14,20 +14,20 @@ public class TileTest
         };
         Assert.AreEqual(Shape.Square, tile.Shape);
         Assert.AreEqual(Material.Cement, tile.Material);
-        Assert.AreEqual(1, tile.Area);
+        Assert.AreEqual(1, tile.Size);
     }
     
     [TestMethod]
-    public void TileWithNegativeAreaShouldFailTest()
+    public void TileWithNegativeSizeShouldFailTest()
     {
         var exeption = Assert.ThrowsException<ArgumentException>(() => new Tile(Shape.Square, Material.Cement, -1));
-        Assert.AreEqual("Area cannot be negative", exeption.Message);
+        Assert.AreEqual("Size cannot be 0 or negative", exeption.Message);
     }
     
     [TestMethod]
     public void TileWithZeroAreaShouldFailTest()
     {
         var exeption = Assert.ThrowsException<ArgumentException>(() => new Tile(Shape.Square, Material.Cement, 0));
-        Assert.AreEqual("Area cannot be negative", exeption.Message);
+        Assert.AreEqual("Size cannot be 0 or negative", exeption.Message);
     }
 }
