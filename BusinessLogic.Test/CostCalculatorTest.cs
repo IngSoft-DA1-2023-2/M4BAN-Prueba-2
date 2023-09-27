@@ -28,7 +28,8 @@ public class CostCalculatorTest
             baldosa2
         };
         var precioMetroCuadrado = 5;
-        var expected = 100 + (Math.PI * 3 * 3 * 5);
+        var COSTO_CEMENTO = 5;
+        var expected = (2 * 2 * precioMetroCuadrado * COSTO_CEMENTO) + (Math.PI * 3 * 3 * precioMetroCuadrado * COSTO_CEMENTO);
         // Act
         var actual = costCalculator.CalculateTotalCost(listaBaldosas, precioMetroCuadrado);
 
