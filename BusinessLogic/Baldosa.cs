@@ -50,6 +50,10 @@ public class Baldosa
             {
                 precioMetro2 = 10;
             }
+            else
+            {
+                precioMetro2 = 5;
+            }
         }
     }
    
