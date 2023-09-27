@@ -18,4 +18,11 @@ public class UnitTest1
         tile.Material = "Cemento";
         Assert.AreEqual("Cemento",tile.Material);
     }
+    [TestMethod]
+    public void AreaTileTest()
+    {
+        var tile = new Tile();
+        tile.Area = 0.5;
+        Assert.AreEqual(0.5,tile.Area);
+    }
 }
