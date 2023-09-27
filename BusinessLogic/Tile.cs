@@ -14,7 +14,14 @@
             get => material;
             set
             {
-                material = value;
+                if (value == "Cemento" || value == "Ceramica")
+                {
+                    material = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Material must be Cemento or Ceramica");
+                }
 
             }
         }
