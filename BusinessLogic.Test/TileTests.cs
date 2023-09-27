@@ -26,4 +26,11 @@ public class TileTests
         Assert.AreEqual("Cemento", tile.Material);
     }
 
+    [TestMethod]
+    public void TileMaterialShouldNotBeOtherThanCementoOrCeramicaTest()
+    {
+        var tile = new Tile();
+        Assert.ThrowsException<ArgumentException>(() => tile.Material = "Madera");
+    }
+
 }
