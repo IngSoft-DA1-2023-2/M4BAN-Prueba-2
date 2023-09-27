@@ -14,5 +14,10 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 ## Contestar en el README
 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
+- El archivo que se modifico fue el __BusinessLogic.Test.csproj__ para agregar la referencia a la Class1.cs - nameSpace BusinessLogic
+
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
+- Si alguien desea agregar un nuevo tipo de figura debera definir una nueva clase que hedere de baldosa y hacer una implementacion para el metodo Area(), tambien habria que hacer pruebas unitarias para esta.
+
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+- Los archivos .DDL tienen codigo en lenguaje intermedio que es independiente de la plataforma. Y el CLR usa estos archivos para ejecutar el codigo, compilandolo rapidamente.
