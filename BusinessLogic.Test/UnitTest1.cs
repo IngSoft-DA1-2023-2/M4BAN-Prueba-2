@@ -40,4 +40,23 @@ public class BaldosaTest
         Assert.AreEqual(ex?.Message, "El tipo de baldosa no es correcto");
     }
     
+    [TestMethod]
+    public void Baldosa_controlDeMaterial_ShouldFail()
+    {
+        string tipo = "circular";
+        string material = "papel";
+        
+        var ex = Assert.ThrowsException<ArgumentException>(() =>
+        {
+            Baldosa unused = new Baldosa
+            {
+                Tipo = tipo,
+                Material = material,
+            };
+        });
+        // Assert
+        Assert.AreEqual(ex?.Message, "El material de baldosa no es correcto");
+    }
+    
+   
 }
