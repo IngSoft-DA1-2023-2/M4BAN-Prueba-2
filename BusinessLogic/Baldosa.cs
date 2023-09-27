@@ -28,6 +28,12 @@ public class Baldosa
             tipo = value;
         }
     }
+    private double precioMetro2;
+    public double PrecioMetro2
+    {
+        get => precioMetro2;
+        set => precioMetro2 = value;
+    }
     
     public string Material
     {
@@ -40,6 +46,10 @@ public class Baldosa
             }
             material = value;
             
+            if(material == "ladrillo")
+            {
+                precioMetro2 = 10;
+            }
         }
     }
    
