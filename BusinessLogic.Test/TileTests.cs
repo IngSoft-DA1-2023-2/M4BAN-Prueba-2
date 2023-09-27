@@ -18,4 +18,12 @@ public class TileTests
         Assert.AreEqual(1, tile.Area);
     }
 
+    [TestMethod]
+    public void TileMaterialTest()
+    {
+        var tile = new Tile();
+        tile.Material = "Cemento";
+        Assert.AreEqual("Cemento", tile.Material);
+    }
+
 }
