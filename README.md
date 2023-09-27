@@ -16,3 +16,6 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+
+5. Se modifico el archivo BusinessLogig.Tests.csproj.
+6. Tiene que cambiar la clase Baldosa.cs para que acepte otra figura.
