@@ -12,7 +12,6 @@ public class Tile
         Size = size;          // Tamaño (lado para cuadradas, radio para circulares)
         Material = material;  // Material de la baldosa (cemento o ladrillo)
     }
-    
     public double CalculateCost(double pricePerSqm)
     {
         double area = 0;
@@ -20,12 +19,23 @@ public class Tile
         {
             area = Size * Size;
         }
-     
+        else if (Shape == "circular")
+        {
+            area = 3.14159265359 * (Size * Size);
+        }
+        else
+        {
+            throw new ArgumentException("Forma de baldosa no válida");
+        }
 
         double materialPrice;
         if (Material == "cemento")
         {
             materialPrice = 5;
+        }
+        else if (Material == "ladrillo")
+        {
+            materialPrice = 10;
         }
         else
         {
