@@ -103,4 +103,23 @@ public class BaldosaTest
         
         Assert.AreEqual(5, unused.PrecioMetro2);
     }
+    
+    [TestMethod]
+    public void agregarListaBaldosa_shouldSucceed()
+    {
+        string tipo = "circular";
+        string material = "ladrillo";
+        
+        Baldosa unused = new Baldosa
+        {
+            Tipo = tipo,
+            Material = material,
+        };
+        
+        List<Baldosa> listaBaldosas = new List<Baldosa>();
+        listaBaldosas.Add(unused);
+        
+        
+    }
+    
 }

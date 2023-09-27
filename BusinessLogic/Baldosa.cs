@@ -57,5 +57,11 @@ public class Baldosa
         }
     }
    
+    private List<Baldosa> listaBaldosas = new List<Baldosa>();
+    
+    public void Add(Baldosa baldosa)
+    {
+        listaBaldosas.Add(baldosa);
+    }
 }
 
