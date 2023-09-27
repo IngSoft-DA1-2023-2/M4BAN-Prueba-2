@@ -10,7 +10,7 @@ public class TileTest
         {
             Shape = Shape.Square,
             Material = Material.Cement,
-            Area = 1,
+            Size = 1,
         };
         Assert.AreEqual(Shape.Square, tile.Shape);
         Assert.AreEqual(Material.Cement, tile.Material);

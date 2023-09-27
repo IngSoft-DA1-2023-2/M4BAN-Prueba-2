@@ -13,8 +13,8 @@ public class TileCalculatorTest
             Area = 1,
         };
         var tileCalculator = new TileCalculator();
-        var result = tileCalculator.Calculate(tile);
-        Assert.AreEqual(1, result);
+        var result = tileCalculator.CalculateSqaureCement(tile, 10);
+        Assert.AreEqual(50, result);
     }
 }
 

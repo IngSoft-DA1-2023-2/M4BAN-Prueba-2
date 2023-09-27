@@ -12,7 +12,15 @@ public class Tile
     {
         this.Shape = shape;
         this.Material = material;
-        this.Area = area;
+        if (shape == Shape.Square)
+        {
+            this.Area = Size * Size;
+        }
+        else if (shape == Shape.Square)
+        {
+            this.Area = Double.Pi * Size * Size;
+        }
+        
     }
 
     public Shape Shape { get; set; }
@@ -29,6 +37,8 @@ public class Tile
             _area = value;
         }
     }
+
+    public int Size { get; set; }
 }
 
 public enum Material
