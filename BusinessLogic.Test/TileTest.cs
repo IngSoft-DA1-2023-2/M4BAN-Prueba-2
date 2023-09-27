@@ -1,9 +1,10 @@
 namespace BusinessLogic.Test;
 
+[TestClass]
 public class TileTest
 {
-    [Test]
-    public void CalculateCost_CementalTile_ShouldSuccess()
+    [TestMethod]
+    public void CalculateCost_CementalTile_ShouldSucceed()
     {
         Tile squareTile = new Tile("cuadrada", 2, "cemento");
         double costPerSqm = 4;
