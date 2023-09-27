@@ -28,7 +28,6 @@ public class TileTest
     {
         Tile invalidTile = new Tile("triangular", 2, "cemento");
         double costPerSqm = 4;
-
         try
         {
             invalidTile.CalculateCost(costPerSqm);
