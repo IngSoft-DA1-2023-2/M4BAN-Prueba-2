@@ -23,5 +23,21 @@ public class TileTest
         Assert.AreEqual(expectedCost, actualCost);
     }
 
+    [TestMethod]
+    public void CalculateCost_WithInvalidShape_ShouldThrowArgumentException()
+    {
+        Tile invalidTile = new Tile("triangular", 2, "cemento");
+        double costPerSqm = 4;
+
+        try
+        {
+            invalidTile.CalculateCost(costPerSqm);
+            Assert.Fail("Se esperaba una excepción ArgumentException.");
+        }
+        catch (ArgumentException ex)
+        {
+            Assert.AreEqual("Forma de baldosa no válida", ex.Message);
+        }
+    }
 
 }
