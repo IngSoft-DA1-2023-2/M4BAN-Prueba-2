@@ -9,4 +9,13 @@ public class UnitTest1
         var tile = new Tile();
         Assert.IsNotNull(tile);
     }
+
+    [TestMethod]
+
+    public void MaterialTileTest()
+    {
+        var tile = new Tile();
+        tile.Material = "Cemento";
+        Assert.AreEqual("Cemento",tile.Material);
+    }
 }

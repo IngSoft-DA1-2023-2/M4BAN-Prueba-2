@@ -1,9 +1,11 @@
-﻿namespace BusinessLogic.Test
+﻿namespace BusinessLogic;
+
+public class Tile
 {
-    internal class Tile
+    public Tile()
     {
-        public Tile()
-        {
-        }
+
     }
+
+   
 }
