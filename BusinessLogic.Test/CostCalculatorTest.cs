@@ -17,9 +17,9 @@ public class CostCalculatorTest
     public void calculatorBaldosasTest()
     {
         Calculator cal = new Calculator();
-        string expected = "baldosa1";
         cal.Baldosa = "baldosa1";
-        Assert.AreEqual(expected,cal.Baldosa);
+        List<string> baldosas = new List<string>() { "baldosa1", "baldosa2", "baldosa3"};
+        Assert.AreEqual(baldosas[0],cal.Baldosa);
     }
 
     [TestMethod]
