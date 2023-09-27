@@ -13,6 +13,6 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 
 ## Contestar en el README
 
-5. ¿Qué archivo se modificó para lograr el ejercicio 2?
-6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
-7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+5. ¿Qué archivo se modificó para lograr el ejercicio 2? -> Se modificó el archivo .csproj del proyecto de test para agregar la referencia al proyecto de backend.
+6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura? -> Se debería agregar una nueva clase que herede de la clase abstracta Tile y se debería modificar el método CalculateCost de la clase CostCalculator para que pueda calcular el costo de la nueva figura.
+7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR	? -> Los archivos .DLL contienen el código compilado de los proyectos. El CLR los utiliza para ejecutar el código de los proyectos.
