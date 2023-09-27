@@ -13,6 +13,6 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 
 ## Contestar en el README
 
-5. ¿Qué archivo se modificó para lograr el ejercicio 2?
-6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
+5. ¿Qué archivo se modificó para lograr el ejercicio 2? Se modifico el csproj
+6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura? No implicaria grandes cambios ya que se uso una interfaz
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
