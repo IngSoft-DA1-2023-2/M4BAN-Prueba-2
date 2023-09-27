@@ -3,9 +3,8 @@
 namespace BusinessLogic.Test;
 
 [TestClass]
-public class UnitTest1
+public class TileTest
 {
-    public string Material { get; private set; }
 
     [TestMethod]
     public void NewTileTest()
@@ -33,11 +32,12 @@ public class UnitTest1
     [TestMethod]
     public void WrongMaterialTileTest()
     {
-        var tileData = new TileData();
+        var tileData = new TileData
         {
-            Material = "Madera";
+            Material = "Madera",
+            Area = 0.5
 
-     };
+        };
         var exception = Assert.ThrowsException<ArgumentException>(() => new Tile(tileData));
         Assert.AreEqual("Material no valido", exception.Message);
     }

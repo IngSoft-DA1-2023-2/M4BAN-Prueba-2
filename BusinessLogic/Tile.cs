@@ -31,3 +31,12 @@ public class Tile
     public double Area { get; set; }
 
 }
+
+
+
+public class CircularTile : Tile
+{
+    public CircularTile(TileData data) : base(data)
+    {
+    }
+}
