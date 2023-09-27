@@ -7,7 +7,7 @@
         public Material Material { get; set; }
         public double CalculateArea()
         {
-            throw new System.NotImplementedException();
+            return Math.PI * Radius * Radius;
         }
     }
 }
