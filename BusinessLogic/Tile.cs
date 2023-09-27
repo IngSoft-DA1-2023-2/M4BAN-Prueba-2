@@ -23,10 +23,10 @@ public class Tile
         {
             area = 3.14159265359 * (Size * Size);
         }
-       // else
-        //{
-          //  throw new ArgumentException("Forma de baldosa no válida");
-        //}
+        else
+        {
+            throw new ArgumentException("Forma de baldosa no válida");
+        }
 
         double materialPrice = 0;
         if (Material == "cemento")
@@ -37,10 +37,10 @@ public class Tile
         {
             materialPrice = 10;
         }
-        //else
-        //{
-           // throw new ArgumentException("Material de baldosa no válido");
-      //  }
+        else
+        {
+            throw new ArgumentException("Material de baldosa no válido");
+        }
 
         double cost = area * pricePerSqm * materialPrice;
         return cost;
