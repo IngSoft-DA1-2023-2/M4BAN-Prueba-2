@@ -7,5 +7,5 @@ public class Tile
 
     }
 
-   
+    public string Material { get; set; }
 }
