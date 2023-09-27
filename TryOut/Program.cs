@@ -19,4 +19,4 @@ var precioMetroCuadrado = 4;
 var costCalculator = new CostCalculator();
 var totalCost = costCalculator.CalculateTotalCost(listaBaldosas, precioMetroCuadrado);
 
-Console.WriteLine("El costo total de las baldosas es: {}", totalCost);
+Console.WriteLine("El costo total de las baldosas es: " + totalCost);
