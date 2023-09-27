@@ -22,7 +22,7 @@ public class Tile
         get => _area;
         set
         {
-            if (value < 0)
+            if (value < 0 || value == 0)
             {
                 throw new ArgumentException("Area cannot be negative");
             }
