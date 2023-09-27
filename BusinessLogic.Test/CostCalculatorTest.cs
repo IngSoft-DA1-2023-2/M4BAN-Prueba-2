@@ -18,8 +18,8 @@ public class CostCalculatorTest
         //Arrange
         List<Valdosa> valdosas = new List<Valdosa>
         {
-            new Valdosa(TipoValdosa.Cuadrado, Material.Cemento, 4),
-            new Valdosa(TipoValdosa.Circulo, Material.Ladrillo, 2)
+            new Valdosa(TipoValdosa."1", Material.Cemento, 4),
+            new Valdosa(TipoValdosa."2", Material.Ladrillo, 2)
         };
         int precioMetroCuad = 5;
         
