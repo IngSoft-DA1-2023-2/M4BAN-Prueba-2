@@ -23,4 +23,11 @@ public class TileTest
         var exeption = Assert.ThrowsException<ArgumentException>(() => new Tile(Shape.Square, Material.Cement, -1));
         Assert.AreEqual("Area cannot be negative", exeption.Message);
     }
+    
+    [TestMethod]
+    public void TileWithZeroAreaShouldFailTest()
+    {
+        var exeption = Assert.ThrowsException<ArgumentException>(() => new Tile(Shape.Square, Material.Cement, 0));
+        Assert.AreEqual("Area cannot be negative", exeption.Message);
+    }
 }
