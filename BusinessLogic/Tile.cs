@@ -5,5 +5,7 @@
         public Tile()
         {
         }
+
+        public int Area { get; set; }
     }
 }
