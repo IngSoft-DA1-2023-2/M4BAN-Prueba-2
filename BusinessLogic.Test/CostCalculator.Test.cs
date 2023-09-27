@@ -48,3 +48,4 @@ public class CostCalculatorTest
             Assert.AreEqual(188.4, totalCost, 0.01); // Utilizamos un margen de error pequeño debido a números decimales.
         }
     }
+ }

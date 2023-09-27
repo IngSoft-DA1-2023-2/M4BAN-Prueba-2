@@ -1,3 +1,5 @@
+namespace BusinessLogic;
+
 public class CircularTile : Tile
 {
     public double Radius { get; }

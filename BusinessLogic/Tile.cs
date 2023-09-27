@@ -1,4 +1,4 @@
-﻿namespace BusinessLogic.Test
+﻿namespace BusinessLogic
 {
     public abstract class Tile
     {

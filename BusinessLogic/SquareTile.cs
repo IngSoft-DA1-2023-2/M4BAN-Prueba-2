@@ -1,3 +1,5 @@
+namespace BusinessLogic;
+
 public class SquareTile : Tile
 {
 	public double SideLength { get; }
