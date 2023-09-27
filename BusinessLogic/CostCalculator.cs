@@ -1,5 +1,6 @@
 ﻿namespace BusinessLogic;
 
+
 public class CostCalculator
 {
     public double CalculateTotalCost(List<Tile> tiles, double pricePerSquareMeter)
