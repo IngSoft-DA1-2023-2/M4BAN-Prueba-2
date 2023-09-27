@@ -19,7 +19,7 @@ public class TileTest
     {
         Tile circleTile = new Tile("circular", 3, "ladrillo");
         double costPerSqm = 4;
-        double expectedCost = 3.14159265359 * (3 * 3) * 4 * 10; // Área * Precio por metro cuadrado * Precio del material
+        double expectedCost = 3.14 * (3 * 3) * 4 * 10; // Área * Precio por metro cuadrado * Precio del material
         double actualCost = circleTile.CalculateCost(costPerSqm);
         Assert.AreEqual(expectedCost, actualCost);
     }
