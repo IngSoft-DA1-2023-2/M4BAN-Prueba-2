@@ -1,10 +1,13 @@
 namespace BusinessLogic.Test;
 
 [TestClass]
-public class UnitTest1
+public class Baldosa
 {
     [TestMethod]
-    public void TestMethod1()
+    public void nuevaBaldosa()
     {
-    }
+        Baldosa baldosa = new Baldosa();
+        Assert.IsNotNull(baldosa);
+    } 
+    
 }
