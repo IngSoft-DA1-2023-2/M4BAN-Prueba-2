@@ -17,8 +17,16 @@ public class Baldosa
     
     public string Tipo
     {
-        get;
-        set;
+        get => tipo;
+        set
+        {
+            if (value != "circular" && value != "cuadrada")
+            {
+                throw new ArgumentException("El tipo de baldosa no es correcto");
+            }
+
+            tipo = value;
+        }
     }
 }
 

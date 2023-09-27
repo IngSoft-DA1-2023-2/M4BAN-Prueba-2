@@ -28,7 +28,7 @@ public class BaldosaTest
         string tipo = "triangulo";
         string material = "ladrillo";
         
-        var ex = Assert.Throws<ArgumentException>(() =>
+        var ex = Assert.ThrowsException<ArgumentException>(() =>
         {
             Baldosa unused = new Baldosa
             {
@@ -37,7 +37,7 @@ public class BaldosaTest
             };
         });
         // Assert
-        Assert.That(ex?.Message, Is.EqualTo("El tipo de baldosa no es correcto"));
+        Assert.AreEqual(ex?.Message, "El tipo de baldosa no es correcto");
     }
     
 }
