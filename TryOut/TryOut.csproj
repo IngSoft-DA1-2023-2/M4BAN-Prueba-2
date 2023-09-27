@@ -7,4 +7,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <Reference Include="BusinessLogic">
+		<HintPath>..\BusinessLogic\bin\Debug\net7.0\BusinessLogic.dll</HintPath>
+	</Reference>
+
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj" />
+
 </Project>
