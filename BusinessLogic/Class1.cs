@@ -1,5 +1,9 @@
 ﻿namespace BusinessLogic;
 
-public class Class1
+public class ConstCalculator
 {
+    public void Tile(){
+
+    }
+
 }
