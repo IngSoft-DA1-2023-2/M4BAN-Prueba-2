@@ -14,5 +14,11 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 ## Contestar en el README
 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
+	
+
+
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
+	
+	
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+	Cuando genero el código, dotnet genera archivos .DLL que contienen el código compilado de la aplicación, esta escrito en codigo legible por el humano independiente a como este escrito. Estos archivos son usados por el CLR para ejecutar la aplicación.

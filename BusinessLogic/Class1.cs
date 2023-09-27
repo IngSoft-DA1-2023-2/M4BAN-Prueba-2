@@ -1,9 +1,10 @@
 ﻿namespace BusinessLogic;
 
-public class ConstCalculator
+public class Tile
 {
-    public void Tile(){
+   public Tile()
+   {
 
-    }
-
+   }
+    public String Material { get; set; }
 }

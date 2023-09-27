@@ -1,7 +1,7 @@
 namespace BusinessLogic.Test;
 
 [TestClass]
-public class ConstalculatorTest
+public class Tile
 {
     [TestMethod]
     public void TestingNewTile()
@@ -9,4 +9,6 @@ public class ConstalculatorTest
         var tile = new Tile();
         Assert.IsNotNull(tile);
     }
+   
 }
+
