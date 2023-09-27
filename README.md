@@ -14,5 +14,11 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 ## Contestar en el README
 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
+
+Cree el archivo MySolution.sln y a él le agregué los .csproj de cada proyecto.
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
+
+Para que funcione con estas modificaciones, se debería agregar un condicional más al método CalculateCost de la clase CostCalculator, para que sepa cómo calcular el área de la nueva figura.
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+
+Los archivos .DLL contienen el código compilado de los proyectos. El CLR los usa para ejecutar el código.
