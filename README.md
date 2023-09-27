@@ -16,3 +16,9 @@ Una empresa de baldosas quiere programar un sistema para calcular los costos de 
 5. ¿Qué archivo se modificó para lograr el ejercicio 2?
 6. En su código, ¿Qué pasa si alguien desea agregar un nuevo tipo de figura?
 7. Cuando usted compila su código, dotnet genera archivos .DLL, ¿Qué contienen esos archivos y cómo son usados por el CLR?
+
+
+5. Se modifico el archivo UnitTes1.cs poniendo using BusinessLogic;
+6. Habria que crear una nueva clase y hacer un new con el nombre de la nueva figura. 
+7.  Los archivos .DLL en .NET contienen código IL y metadatos necesarios para la ejecución de programas .NET. 
+El CLR se encarga de cargar, compilar en código nativo y ejecutar el código IL contenido en estos archivos.
