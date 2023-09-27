@@ -7,5 +7,6 @@
         }
 
         public int Area { get; set; }
+        public string Material { get; set; }
     }
 }
