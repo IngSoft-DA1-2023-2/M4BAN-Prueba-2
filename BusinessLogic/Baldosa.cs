@@ -11,7 +11,14 @@ public class Baldosa
         Tipo = tipo;
         Material = material;
     }
-    public string Tipo { get; set; }
+    private string tipo = string.Empty;
+
     public string Material { get; set; }
+    
+    public string Tipo
+    {
+        get;
+        set;
+    }
 }
 
