@@ -1,10 +1,14 @@
 namespace BusinessLogic.Test;
 
 [TestClass]
-public class UnitTest1
+public class Tile
 {
     [TestMethod]
-    public void TestMethod1()
+    public void TestingNewTile()
     {
+        var tile = new Tile();
+        Assert.IsNotNull(tile);
     }
+   
 }
+

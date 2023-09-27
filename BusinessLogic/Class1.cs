@@ -1,5 +1,18 @@
 ﻿namespace BusinessLogic;
 
-public class Class1
+public abstract class Tile
 {
+    protected IMaterial Material;
+
+    public Tile(IMaterial material)
+    {
+        Material = material;
+    }
+
+    public abstract double GetArea();
+
+    public double GetCost(double pricePerSquareMeter)
+    {
+        return GetArea() * pricePerSquareMeter * Material.Price;
+    }
 }
