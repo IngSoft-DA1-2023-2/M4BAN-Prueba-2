@@ -6,7 +6,7 @@
         public int SideLength { get; set; }
         public double CalculateArea()
         {
-            throw new NotImplementedException();
+            return SideLength * SideLength;
         }
     }
 }
