@@ -1,8 +1,9 @@
 namespace BusinessLogic.Test;
 
 [TestClass]
-public class Baldosa
+public class BaldosaTest
 {
+
     [TestMethod]
     public void nuevaBaldosa()
     {
