@@ -11,5 +11,7 @@ public class Baldosa
         Tipo = tipo;
         Material = material;
     }
+    public string Tipo { get; set; }
+    public string Material { get; set; }
 }
 
