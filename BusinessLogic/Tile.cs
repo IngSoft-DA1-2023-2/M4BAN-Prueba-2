@@ -6,6 +6,7 @@
 
         public Tile()
         {
+            material = "Cemento";
         }
 
         public string Material
@@ -13,7 +14,7 @@
             get => material;
             set
             {
-                if (value == "Cemento" || value == "Ceramica")
+                if (value == "Cemento" || value == "Ladrillo")
                 {
                     material = value;
                 }
@@ -25,9 +26,9 @@
             }
         }
 
-        public int Side { get; set; }
+        public double Side { get; set; }
 
-        public virtual int GetArea()
+        public virtual double GetArea()
         {
             return 0;
         }

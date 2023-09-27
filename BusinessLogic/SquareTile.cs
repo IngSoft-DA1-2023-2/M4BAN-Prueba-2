@@ -7,7 +7,7 @@
         {
         }
 
-        public override int GetArea()
+        public override double GetArea()
         {
             return Side * Side;
         }
