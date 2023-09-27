@@ -31,4 +31,6 @@ public class CostCalculatorTest
         Assert.AreEqual(70, totalCost);
 
     }
+    
+    
 }
