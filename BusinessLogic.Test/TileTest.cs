@@ -22,4 +22,22 @@ public class TileTest
         double actual = tile.CalculateArea();
         Assert.AreEqual(expected, actual);
     }
+
+    [TestMethod]
+    public void CalculateAreaSquareTileTest()
+    {
+        Material material = new Material()
+        {
+            Name = "Ceramic",
+            Cost = 10
+        };
+        ITile tile = new SquareTile()
+        {
+            Material = material,
+            SideLength = 10
+        };
+        double expected = 100;
+        double actual = tile.CalculateArea();
+        Assert.AreEqual(expected, actual);
+    }
 }
