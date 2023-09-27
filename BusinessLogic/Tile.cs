@@ -21,7 +21,7 @@ public class Tile
         }
         else if (Shape == "circular")
         {
-            area = 3.14159265359 * (Size * Size);
+            area = 3.14 * (Size * Size);
         }
         else
         {
